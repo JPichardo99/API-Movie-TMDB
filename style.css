@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	background: #e5ecf4;
+	color: #1d1d1d;
+}
+.title {
+	bottom: 0;
+	background: #2660a4;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+.title p {
+	font-size: 22px;
+	color: #fff;
+	font-weight: 600;
+}
+.categorias {
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	gap: 10px;
+}
+.categorias button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 40px;
+	width: 200px;
+	background: #406e8e;
+	color: #fff;
+	border-radius: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 600;
+	transition: background-color .3s;
+}
+
+.categorias button:hover {
+	background-color: #729fc0;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto 25px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	transition: box-shadow .3s;
+}
+.contenedor .pelicula .poster:hover{
+	box-shadow: 0 0 25px rgba(33, 33, 33, .4);
+}
